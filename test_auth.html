@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Auth Endpoint</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function testAuth() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // First, get the token
+            $.ajax({
+                url: 'http://localhost:8000/api/token/',
+                method: 'POST',
+                data: {
+                    username: username,
+                    password: password
+                },
+                success: function(response) {
+                    const token = response.access;
+                    $('#token').text('Token: ' + token.substring(0, 20) + '...');
+                    
+                    // Now test the user endpoint
+                    $.ajax({
+                        url: 'http://localhost:8000/api/user/',
+                        method: 'GET',
+                        headers: {
+                            'Authorization': 'Bearer ' + token,
+                            'Content-Type': 'application/json'
+                        },
+                        success: function(userResponse) {
+                            $('#result').html('<pre>' + JSON.stringify(userResponse, null, 2) + '</pre>');
+                            $('#status').text('Success!');
+                        },
+                        error: function(xhr, status, error) {
+                            $('#result').html('Error: ' + xhr.status + ' ' + error + '<br>Response: ' + xhr.responseText);
+                            $('#status').text('Error: ' + xhr.status);
+                        }
+                    });
+                },
+                error: function(xhr, status, error) {
+                    $('#result').html('Login Error: ' + xhr.status + ' ' + error + '<br>Response: ' + xhr.responseText);
+                    $('#status').text('Login Failed');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Test Auth Endpoint</h1>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" value="admin2">
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" value="admin123">
+    </div>
+    <button onclick="testAuth()">Test Auth</button>
+    <div id="token" style="margin-top: 20px; font-family: monospace;"></div>
+    <div id="status" style="margin: 10px 0; font-weight: bold;"></div>
+    <div id="result" style="margin-top: 20px; white-space: pre-wrap; font-family: monospace;"></div>
+</body>
+</html>

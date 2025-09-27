@@ -1,0 +1,300 @@
+[
+  {
+    "model": "elections.election",
+    "pk": 1,
+    "fields": {
+      "name": "2025 Indian General Election",
+      "description": "Vote for the next Prime Minister of India!",
+      "election_type": "single_choice",
+      "visibility": "public",
+      "start_time": "2025-08-01T09:00:00Z",
+      "end_time": "2025-08-31T17:00:00Z",
+      "created_by": null,
+      "max_votes_per_voter": 1,
+      "require_confirmation": true,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z",
+      "updated_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 1,
+    "fields": {
+      "name": "Narendra Modi",
+      "election": 1,
+      "description": "Prime Minister of India",
+      "position": "Prime Minister",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 2,
+    "fields": {
+      "name": "Rahul Gandhi",
+      "election": 1,
+      "description": "Congress Party Leader",
+      "position": "Opposition Leader",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.election",
+    "pk": 2,
+    "fields": {
+      "name": "Student Council Election",
+      "description": "Choose your student council representative.",
+      "election_type": "single_choice",
+      "visibility": "public",
+      "start_time": "2025-08-01T09:00:00Z",
+      "end_time": "2025-08-15T17:00:00Z",
+      "created_by": null,
+      "max_votes_per_voter": 1,
+      "require_confirmation": true,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z",
+      "updated_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 3,
+    "fields": {
+      "name": "Amit Kumar",
+      "election": 2,
+      "description": "Computer Science Student",
+      "position": "President",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 4,
+    "fields": {
+      "name": "Rajesh Sharma",
+      "election": 2,
+      "description": "Electrical Engineering Student",
+      "position": "Vice President",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 5,
+    "fields": {
+      "name": "Preeti Gowda",
+      "election": 2,
+      "description": "Mechanical Engineering Student",
+      "position": "Secretary",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.election",
+    "pk": 3,
+    "fields": {
+      "name": "AIT Student Union Election 2025",
+      "description": "Vote for the next Student Union President!",
+      "election_type": "single_choice",
+      "visibility": "public",
+      "start_time": "2025-09-01T09:00:00Z",
+      "end_time": "2025-09-30T17:00:00Z",
+      "created_by": null,
+      "max_votes_per_voter": 1,
+      "require_confirmation": true,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z",
+      "updated_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 6,
+    "fields": {
+      "name": "Amit Kumar",
+      "election": 3,
+      "description": "Computer Science Student",
+      "position": "President",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 7,
+    "fields": {
+      "name": "Rajesh Sharma",
+      "election": 3,
+      "description": "Electrical Engineering Student",
+      "position": "Vice President",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 8,
+    "fields": {
+      "name": "Preeti Gowda",
+      "election": 3,
+      "description": "Mechanical Engineering Student",
+      "position": "Secretary",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.election",
+    "pk": 4,
+    "fields": {
+      "name": "Most Uncivil Anchor",
+      "description": "Choose your most uncivil anchor.",
+      "election_type": "single_choice",
+      "visibility": "public",
+      "start_time": "2025-08-01T09:00:00Z",
+      "end_time": "2025-08-31T17:00:00Z",
+      "created_by": null,
+      "max_votes_per_voter": 1,
+      "require_confirmation": true,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z",
+      "updated_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 9,
+    "fields": {
+      "name": "Rajat",
+      "election": 4,
+      "description": "News Anchor",
+      "position": "Anchor",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 10,
+    "fields": {
+      "name": "Amish",
+      "election": 4,
+      "description": "News Anchor",
+      "position": "Anchor",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 11,
+    "fields": {
+      "name": "Ravish",
+      "election": 4,
+      "description": "News Anchor",
+      "position": "Anchor",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 12,
+    "fields": {
+      "name": "Arnab",
+      "election": 4,
+      "description": "News Anchor",
+      "position": "Anchor",
+      "order": 4,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.election",
+    "pk": 5,
+    "fields": {
+      "name": "AICTE Student Council Election 2025",
+      "description": "Choose your student council representative.",
+      "election_type": "single_choice",
+      "visibility": "public",
+      "start_time": "2025-08-01T09:00:00Z",
+      "end_time": "2025-08-15T17:00:00Z",
+      "created_by": null,
+      "max_votes_per_voter": 1,
+      "require_confirmation": true,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z",
+      "updated_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 13,
+    "fields": {
+      "name": "Atul Chaudhary",
+      "election": 5,
+      "description": "Computer Science Student",
+      "position": "President",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 14,
+    "fields": {
+      "name": "Arnab Das",
+      "election": 5,
+      "description": "Electrical Engineering Student",
+      "position": "Vice President",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 15,
+    "fields": {
+      "name": "Shreya Sharma",
+      "election": 5,
+      "description": "Mechanical Engineering Student",
+      "position": "Secretary",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "elections.candidate",
+    "pk": 16,
+    "fields": {
+      "name": "Kushal",
+      "election": 5,
+      "description": "Civil Engineering Student",
+      "position": "Treasurer",
+      "order": 4,
+      "is_active": true,
+      "created_at": "2025-08-01T09:00:00Z"
+    }
+  }
+]
